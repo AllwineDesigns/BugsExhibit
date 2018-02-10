@@ -1,0 +1,11 @@
+[Unit]
+Description=Bugs Exhibit Service
+After=network.service
+
+[Service]
+Type=simple
+ExecStart=/home/pi/bugs/bugs.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
